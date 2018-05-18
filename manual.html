@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Supervision</title>
+        
+        <link rel="stylesheet" href="css/view.css">
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+        <style>
+        a{
+                    position:absolute;
+                    left: 0%;
+                }     
+        body, html {
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+.pulse-button {
+  position: relative;
+  top: 50%;
+  left: 100%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  font-size: 1.3em;
+  font-weight: light;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+p{
+  margin-top: 170px;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+<div class="contrainer">       
+<div class="head">
+        <a href="" class="btn btn-default" aria-label="Left Align" onclick="next()">
+                <span class="fa fa-arrow-left fa-2x" aria-hidden="true"></span>
+                </a>
+    <h1>Supervision Manual</h1>
+
+    <div class='container'>
+
+    <button class="btn-green">Panne M1</button>
+    <button class="btn-green">Panne M2</button>
+        <span class='pulse-button'>pulse</span>
+      </div>
+</div>
+
+<div class="dashboard">
+    <div class="meter meter--rpm meter--big-label">
+      <p>Pression Maxcimal Fournit</p>
+    </div>
+
+    
+    <button class="btn-green">Arret Urgent</button>
+    <button class="btn-green">Etat du Porte</button>
+	
+  <div class="meter meter--speed">
+    <p>Pression Minimal Fournit</p> 
+  </div>
+
+</div>
+
+<div class="help">
+    <button class="btn-blue">M1</button>
+    <button class="btn-blue">M2</button>
+    <button class="btn-blue">EV1</button>
+    <button class="btn-blue">EV2</button>
+    <button class="btn-blue">EV3</button>
+</div>
+
+<!--
+<div class="loader active">Loading...</div>
+-->
+<script>
+
+        function next(){
+      
+        location.replace("choice.html");
+        event.preventDefault();
+      }
+</script>
+<script src="js/view.js"></script> 
+</div>
+</body>
+</html>

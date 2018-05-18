@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="tn.tik.sisp" versionCode="10" version="1.0.0">
+  <name>SISP</name>
+  <author href="https://tik.tn" email="contact.tik.tn@gmail.com">
+      Tik.tn
+  </author>
+  <icon src="images/icons/icon.jpg"/>
+
+  <platform name="ios"/>
+  <platform name="android"/>
+  <platform name="winphone"/>
+  <content src="index.html"/>
+
+</widget>
